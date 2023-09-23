@@ -1,0 +1,1 @@
+- >When you see someone (Julian Assange) being persecuted by criminal empire controlled by viscious bastards, there's a good chance that persons work has made meaningful contributions to the realization of justice.
