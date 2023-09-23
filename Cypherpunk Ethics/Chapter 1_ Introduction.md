@@ -30,7 +30,7 @@
 		- many are anarcho-capitalists
 			- reject cyberpunk fear of corporate power
 		- draw inspiration from other literature
-			- ex: Geaorge Orwell
+			- ex: George Orwell
 - ***Toward a Cypherpunk Ethics***
 	- **This book provides a philisophical look at the ethical, political, social, economic, and technological aspects of the cypherpunk worldview**
 	- Cypherpunk worldview based on claims of what institutions ought to do and what societies ought to be like
