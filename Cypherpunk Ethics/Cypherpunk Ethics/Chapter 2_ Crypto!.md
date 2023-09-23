@@ -1,0 +1,82 @@
+# DOI
+- [10.4324/9781003220534-2](https://www.taylorfrancis.com/chapters/mono/10.4324/9781003220534-2/crypto-patrick-anderson)
+
+## Notes
+- ***Introduction***
+	- Crypto is not encryption
+		- Cryptology (crypto) is the science of making and breaking ciphers
+	- Cyptography
+		- Making cyphers
+		- Practiced by cryptographers
+	- Cyptanalysis
+		- Beaking ciphers
+		- Practiced by crypanalysts
+	- Cipher
+		- Mathematical function that allows to transform a plaintext message into a ciphertext message
+			- Scrambled version of the message and vice versa
+		- Encryption / enciphering is the process of rendering plaintext into ciphertext
+		- Decryption / deciphering is the process of rendering ciphertext into plaintext
+	- **In this book crypto is used to refer to the science of cryptography, the process of encryption, and cryptographic ciphers themselves**
+- ***A Brief Introduction to Cryptography***
+	- Alice, Bob and Eve
+		- Alice and Bob want to communicate
+		- Eve wants to eavesdrop
+	- Alice and Bob create a cipher to create an encryption key
+		- Key
+			- Specific letter or number pattern that Alice and Bob use to encrypt their communication
+		- Must find secure channel to share key
+		- Simple cipher
+			- Substitution cipher
+				- ex: move all letters of the alphabet three letters to the right and wrap around the last three letters to the first three letters
+					- Must know when to wrap around
+						- Use a modulus
+							- ex: if moving letters three letters to the right when get to x, y, z modulus is 26 (number of letters in the alphabet)
+								- Subtract the modulus from the last lthree letter positions plus three
+		- Key space
+			- Number of possible keys
+- ***The Public Key Crypto Revolution***
+	- Symmetric key cryptography
+		- Both sender and receiver use same key to encrypt and decrypt message
+	- Assymetric key cryptography (public key cryptography)
+		- Multiple keys decrypt the same message
+		- Can publicly distribute encryption key
+	- Public encryption key and private encryption key
+		- Alice posts public key
+		- Bob uses public key to encrypt message
+		- Alice decodes message with private key
+	- For public key cryptosystem to be secure must be "computationally secure" using a trapdoor one-way function
+	-	One-way function
+		-	Mathematical operation that is easy to perform but nearly impossible to reverse
+			-	Alice's public key is a one-way function
+			-	Bob uses funtion to encrypt message
+		-	First one-way function
+			-	To gain a much better but still high level understanding of how the following works click the link at the bottom of this section
+			-	RSA named after creators Rivest, Shamir and Adleman
+				-	Uses an exponent on the letter numbers to make the equation more complex
+				-	Alice picks numbers for the exponent and modulus number and uses those as her public key
+				-	When Bob encrypts message he exponentiates his plaintext message by Alice's exponent and modulates it by Alices modulus number
+				-	Alice decrypts the message with her own exponent (differnet than Bob's) and the modulus
+				-	While there are many complex mathematical properties thaat make the RSA cipher work the most important is the difficulty of prime factorization
+						-	 Prime number
+							-	 Number that can only be divided by one and itself to produce an integer
+						-	 Prime factorization
+							-	 Factoring a number into two prime numbers
+								-	 77 can be factored into 7 and 11
+						-	 Remember the one-way function
+							-	 For large numbers it is easy to multiply two primes but hard to do prime factorization
+						-	 To generate the modulus the RSA algorithm multiplies two randomly chosen primes called p and q
+				-	 A much better explanation of how this works can be found [here](https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/)
+					-	  This also explains the next generation of cryptography called Elliptic Curve Cryptography which is what many cryptocurrencies use to secure transfers of tokens and coins barring quantum resistant methods
+-   ***Digital Crypto as a Convivial Tool***
+	-   This section highlights the ethical and social values of cypherpunks
+	-   Convivial tools are tools that allow us to thrive with each other as free, interdependent individuals
+	-   In this context tools can mean anything from pencils to industrial factories to public schools
+	-   > Convivial tools distribute power equitably and enable individuals to define their own creative ends
+	-   Manipulative tools are those such as the public school system which allows the government to implant it's views on the populace
+	-   > Convivial tools rule out certain levels of power, compulsion, and programming
+	-   Peer-to-peer (decentralized) networks are convivial tools while tools like Facebook are not because the are peer-to-Facebook-to-peer (centralized)
+-   ***Conclusion***
+	-   Cypherpunks philosophy of technology has both and engineering and humanities side
+		-   The engineering side calls people to have a basic understanding of cryptography
+		-   The humanities side treats cryptography as a convivial tool
+			-   Empowers individuals to exert greater control over how, when and with whom they communicate
